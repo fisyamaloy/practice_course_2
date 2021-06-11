@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>6</title>
+
+	<style type="text/css">
+		ul 
+		{
+  			 animation-duration: 3s;
+ 			 animation-name: slidein;
+
+		}
+
+		@keyframes slidein 
+		{
+	 		from 
+	 		{
+    			margin-left: 100%;
+    			width: 300%;
+  			}
+
+			to 
+			{
+			    margin-left: 0%;
+			    width: 100%;
+			}
+		}
+
+		li a
+		{
+			border: 2px solid red;
+    		float: left;
+    		background-color: red;
+
+    		text-align: left;
+    		text-decoration: none;
+    		color: fuchsia;
+
+			padding: 10px;
+
+			animation-duration: 4s;
+ 			animation-name: gradient;
+		}
+
+		li
+		{
+			list-style-type: none;
+		}
+
+		li:last-child a
+		{
+			padding-right: 140px;
+		}
+
+
+		li a:hover
+		{
+    		color: white; 
+    		background-color: gray;
+    		border-color: grey;
+   		}
+
+   		@keyframes gradient
+		{
+	 		0%   {background-color: red;}
+  			25%  {background-color: yellow;}
+  			50%  {background-color: blue;}
+  			100% {background-color: red;}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="view_port">
+	<ul class="cyclon_eye">
+		<li><a href="">Главная</a></li>
+		<li><a href="">Новости</a></li>
+		<li><a href="">Контакты</a></li>
+		<li><a href="">О компании</a></li>
+		<li><a href="">Как добраться</a></li>
+	</ul>
+	</div>
+</body>
+</html>
