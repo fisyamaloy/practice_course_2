@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Справочник лекаря</title>
+	<style>
+    .colortext 
+    {
+    	background-color: green;
+    	color: yellow;
+    }
+    td
+    {
+    	color: yellow;
+    	background-color: grey;
+    }
+
+    </style>
+
+</head>
+<body>
+	<div>
+	<form action="">
+		<table border="1" cellpadding="5" class="colortext" style="border-color: red;">
+			<b>Справочник лекаря</b>
+			<tr>
+				<td>Ваш E-mail</td>
+				<td><input type="text" name="email" class="colortext"></td>
+			</tr>
+			<tr>
+				<td>Пол больного</td>
+				<td>
+					<input type="radio" name="gender" id="g1" value="1">
+					<label for="g1" class="colortext">Мужчина</label>
+					<input type="radio" name="gender" id="g2" value="2">
+					<label for="g2" class="colortext">Женщина</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Год рождения больного</td>
+				<td>
+				<select name="year" size="1">
+					<option value="1984" selected>1984</option>
+					<option value="1985">1985</option>
+					<option value="1986">1986</option>
+					<option value="1987">1987</option>
+					<option value="1988">1988</option>
+					<option value="1989">1989</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<textarea name="description" cols="40" rows="10" style="background-color: aqua;">
+						Что болит? Опишите состояние больного.
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Отправить">
+					<button type="reset">Сбросить</button>
+				</td>
+			</tr>
+
+		</table>
+	</form>
+
+	</div>
+</body>
+</html>

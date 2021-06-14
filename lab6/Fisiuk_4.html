@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style type="text/css">
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        body 
+        {
+            background: url("doctor.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        header 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin: 20px 20px;
+        }
+
+        .logo 
+        {
+            width: 5%;
+        }
+
+        .header_text
+        {
+            color: black;
+        }
+
+        .dropbtn 
+        {
+            background-color: #4CAF50;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            animation-name: gradient;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .dropdown 
+        {
+            margin-left: 160px;
+        }
+
+        .dropdown-content
+        {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            width: 105px;
+            z-index: 1;
+        }
+
+        .dropdown-content a 
+        {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover
+        {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content 
+        {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn 
+        {
+            background-color: #3e8e41;
+        }
+
+        .main 
+        {
+            display: flex;
+        }
+
+        #main_text 
+        {
+            width: 70%;
+            color: black;
+            margin-left: 250px;
+        }
+
+        @keyframes gradient
+        {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: red;}
+        }
+
+        span
+        {
+            animation-name: gradient;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="Doctor-plus.png" alt="">
+        <h1 class="header_text"><span>Справочник лекаря <br> Разработчик: Фисюк Данил Сергеевич</span></h1>
+    </header>
+    <div class="main">
+        <div class="dropdown">
+            <button class="dropbtn">Задания</button>
+            <div class="dropdown-content">
+                <a href="Fisiuk_1.html" target="_blank">Ссылка 1</a>
+                <a href="Fisiuk_2.html" target="_blank">Ссылка 2</a>
+                <a href="Fisiuk_3.html" target="_blank">Ссылка 3</a>
+            </div>
+        </div>
+        <div class="content">
+            <p id="main_text">
+                вапвро вародваодваотвдапрд ваор двартд вартд ваир дыапржва пзвар ыжаржыапр жыежапржваплвжап ртжвапрож вапр
+                вапвро вародваодваотвдапрд ваор двартд вартд ваир дыапржва пзвар ыжаржыапр жыежапржваплвжап ртжвапрож вапр
+                вапвро вародваодваотвдапрд ваор двартд вартд ваир дыапржва пзвар ыжаржыапр жыежапржваплвжап ртжвапрож вапр
+                вапвро вародваодваотвдапрд ваор двартд вартд ваир дыапржва пзвар ыжаржыапр жыежапржваплвжап ртжвапрож вапр
+                вапвро вародваодваотвдапрд ваор двартд вартд ваир дыапржва пзвар ыжаржыапр жыежапржваплвжап ртжвапрож вапр
+                вапвро вародваодваотвдапрд ваор двартд вартд ваир дыапржва пзвар ыжаржыапр жыежапржваплвжап ртжвапрож вапр
+                вапвро вародваодваотвдапрд ваор двартд вартд ваир дыапржва пзвар ыжаржыапр жыежапржваплвжап ртжвапрож вапр.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

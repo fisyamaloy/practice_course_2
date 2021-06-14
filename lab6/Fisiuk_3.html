@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+
+		body 
+		{
+		    background-color: black;
+		    margin: 0;
+	    	padding: 0;
+		}
+
+		div:nth-of-type(1)
+		{
+			display: flex;
+			margin-top: 30px;
+		    justify-content: space-around;
+		}
+
+		header
+		{
+		    height: 120px;
+		    display: flex;
+		    border-radius: 25px;
+		    justify-content: center;
+		    align-items: center;
+		    background-color: gray;
+		}
+
+		nav
+		{
+		    width: 30%;
+		    height: 500px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background-color: gray;
+		    border-radius: 25px;
+		}
+
+		section
+		{
+		    width: 30%;
+		    height: 500px;
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+		    flex-direction: column;
+		    background-color: gray;
+		    border-radius: 25px;
+		}
+
+
+		aside 
+		{
+		    width: 30%;
+		    height: 500px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background-color: gray;
+		    border-radius: 25px;
+		}
+
+		footer 
+		{
+		    height: 120px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    margin-top: 30px;
+		    background-color: gray;
+		    border-radius: 25px;
+		}
+
+		.p_text
+		{
+		    font-family: Georgia, 'Times New Roman', Times, serif;
+		    color: white;
+		}
+
+		.article 
+		{
+		    width: 90%;
+		    height: 180px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background-color: lightgrey;
+		    border-radius: 25px;
+		}
+
+		#footer 
+		{
+		    width: 90%;
+		    height: 100px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background-color: lightgrey;
+		    border-radius: 25px;
+		}
+
+		#header_prop
+		{
+		    width: 90%;
+		    height: 100px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background-color: lightgrey;
+		    border-radius: 30px;
+		}
+
+
+	</style>
+
+	<title>Document</title>
+</head>
+<body>
+	<header>
+        <p class="p_text">header</p>
+    </header>
+
+    <div>
+        <nav>
+            <p class="p_text">nav</p>
+        </nav>
+        <section>
+            <p class="p_text">section</p>
+
+            <div id="header_prop">
+                <p class="p_text">header</p>
+            </div>
+
+            <div class="article">
+                <p class="p_text">article</p>
+            </div>
+
+            <div id="footer">
+                <p class="p_text">footer</p>
+            </div>
+        </section>
+        <aside>
+            <p class="p_text">aside</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p class="p_text">footer</p>
+    </footer>
+
+</body>
+</html>
