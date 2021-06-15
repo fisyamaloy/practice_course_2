@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<form name = "publish">
+		<input type="text" name="number" id="input_namber">
+		<input type="submit" value="Кнопка">
+	</form>
+
+	<script type="text/javascript">
+		document.forms.publish.onsubmit = function() {
+			var week_days = { "1" :  "Понедельник", "2" : "Вторник", "3" : "Среда", "4" : "Четверг", "5" : "Пятница", "6" : "Суббота", "7" : "Воскресенье" };
+			var message = this.number.value;
+			alert(week_days[message]);
+			const fs = require("fs");
+			fs.writeFileSync("1.txt", "f", "ascii");
+		}
+
+	</script>
+</body>
+</html>

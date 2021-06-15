@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		// 1
+		var str = "abcde";
+		alert(str[0]);
+		alert(str[1]);
+		alert(str[4]);
+
+		//2
+		alert(60 * 60);
+
+		//3
+		var num = 1;
+		num += 12;
+		num -= 14;
+		num *= 5;
+		num /= 7;
+		num++;
+		num--;
+		alert(num);
+
+		//4
+		function getElementsRow(A) 
+		{
+			var wordsStr = "";
+			for(var i = 0; i < A.length; ++i)
+			{
+				wordsStr += A[i];
+			}
+			
+			return wordsStr;	
+		}
+		var A = ["Привет,", "мир", "!"];
+		alert(getElementsRow(A));
+
+		//5
+		var text = getElementsRow(A);
+		alert(text);
+
+		//6
+		A[0] = "Пока,";
+		alert(A);
+		
+		//7
+		var someObject = { "Коля":"1000", "Вася":"500", "Петя":"200" };
+		alert(someObject["Коля"] + "," + someObject["Петя"]);
+
+		//8
+		var arr = [1, 2, 3, 4, 5];
+		var arr_1 = [];
+		arr[0] = 1;
+		arr[1] = 2;
+		arr[2] = 3;
+		arr[3] = 4;
+		arr[4] = 5;
+
+		//9
+		var arr_2 =
+		{
+			"ru" : ["Голубой", "красный", "зеленый"],
+			"en" : ["blue", "red", "green"],
+		};
+
+		alert(arr_2["ru"][0]);
+
+		//10
+		var num_1 = 3;
+		alert(num_1);
+
+		//11 str
+		var str = "Привет, мир!";
+		alert(str);
+
+		//12
+		var str1 = "Привет, ";
+		var str2 = "мир!";
+		alert(str1 + str2);
+
+		//13
+		var name = "Данил";
+		alert("Привет, %" + name + "%");
+
+		//14
+		var age = 19;
+		alert("Мне %" + age + "% лет!");
+
+		//15 prompt
+		alert("Ваше имя %" + prompt() + "%");
+
+		//16
+		var number = prompt();
+		alert(number * number);
+
+		//1 - obrashenie so strokani
+		var str3 = "abcde";
+		alert(str3[0] + str3[2] + str3[4]);
+
+		//2 - variant 21
+		var num_2 = 21 * 1000;
+		alert(num_2);
+
+		//praktika 
+		const daysPerMonth = 30;
+		const secondsPerHour = 60 * 60;
+		const secondsPerDay = secondsPerHour * 24;
+		const secondsPerMonth = secondsPerDay * daysPerMonth;
+		alert(secondsPerDay);
+
+		// 1- prisvaivanie, decrement.
+		var num_3 = 47;
+		num_3 += 7;
+		num_3 -= 18;
+		num_3 *= 10;
+		num_3 /= 15;
+		alert(num_3);
+
+		//2
+		var num_4 = 10;
+		num_4++;
+		++num_4;
+		num_4--;
+		alert(num);
+
+		// 1 - massive work
+		var massive = ["a", "b", "c"];
+		alert(massive);
+		
+		//2
+		alert(massive[0] + massive[1] + massive[2]);
+
+		//3
+		var massive_1 = ["a", "b", "c", "d"];
+		alert(massive_1[0] + "+" + massive_1[1] + ", " + massive_1[2] + "+" + massive_1[3]);
+
+		//4
+		var massive_2 = [2, 5, 3, 9];
+		var result = massive_2[0] * massive_2[1] + massive_2[2] + massive_2[3];
+		alert(result);
+
+		//1-objects
+		var obj_1 = {"a" : 1, "b" : 2, "c" : 3};
+		alert(obj_1.a);
+		alert(obj_1["a"]);
+
+		//2
+		var obj_2 = { "Коля":"1000", "Вася":"500", "Петя":"200" };
+		alert(obj_2["Коля"] + ", " + obj_2["Петя"]);
+
+		//3
+		var week_days = { 1 :  "Понедельник", 2 : "Вторник", 3 : "Среда", 4 : "Четверг", 5 : "Пятница", 6 : "Суббота", 7 : "Воскресенье" };
+		alert(week_days[2]);
+
+		//4
+		var num_day = 3;
+		alert(week_days[num_day]);
+
+		// mnogomernyi massive
+		var mnog_meassive = [[1,2,3,4,5], [6,7,8,9,10], [11,12,13,14,15], [16,17,18,19,20], [21,22,23,24,25]];
+
+		alert(mnog_meassive[4][0]);
+
+	</script>
+</body>
+</html>
