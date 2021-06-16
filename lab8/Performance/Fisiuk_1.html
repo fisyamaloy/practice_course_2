@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// 1
+		var num_1 = 10;
+		console.log(num_1 == 10 ? "Верно" : "Неверно");
+
+		// 2
+		var min = 10;
+		if (min < 15) 
+		{
+			console.log("В первой четверти");
+		}
+		else if (min < 31)
+		{
+			console.log("Во второй четверти");
+		}
+		else if (min < 46)
+		{
+			console.log("В третьей четверти");
+		}
+		else
+		{
+			console.log("В четвертой четверти");
+		}
+
+		// 3
+		var lang = "ru";
+		var arr;
+		// if solving
+		if(lang == "ru")
+		{
+			arr = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+		}
+		else
+		{
+			arr = ["mn", "ts", "wd", "th", "fr", "st", "sn"];
+		}
+
+		// switch solution
+		switch(lang)
+		{
+			case "ru":
+			{
+				arr = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+				break;
+			}
+			case "en":
+			{
+				arr = ["mn", "ts", "wd", "th", "fr", "st", "sn"];
+				break;		
+			}
+		}
+		console.log(arr);
+
+
+		// Multidimensional Array Solution
+		arr = {
+ 			'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
+ 			'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+		};
+		console.log(arr[lang]);
+
+	</script>
+</body>
+</html>
