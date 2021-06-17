@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		function tasksByWhile() 
+		{
+			// 1
+			var i = 1;
+			while (i <= 210)
+			{
+				console.log(i++);
+			}
+
+			// 2 - have no sense.
+			i = 21;
+			while (i <= 0)
+			{
+				console.log(i++);
+			}
+
+			// 3
+			i = 0;
+			while (i <= 210)
+			{
+				console.log(i += 2);
+			}
+
+			// 4
+			i = 1;
+			var sum = 0;
+			while (i <= 0)
+			{
+				sum += i;
+				++i;
+			}
+			console.log(sum);
+		}
+
+		function tasksByFor()
+		{
+			// 1
+			for (var i = 1; i <= 210; ++i)
+			{
+				console.log(i);
+			}
+
+			// 2
+			for (var i = 21; i <= 0; ++i)
+			{
+				console.log(i);
+			}
+
+			// 3
+			for(var i = 0; i <= 210; i += 2)
+			{
+				console.log(i);
+			}
+
+			// 4
+			var sum = 0;
+			for (var i = 1; i <=0; ++i)
+			{
+				sum += i;
+			}
+			console.log(sum);
+		}
+
+		tasksByWhile();
+		tasksByFor();
+
+		// 1
+		var A = [1, 2, 3, 4, 5];
+		for (var i = 0; i < A.length; ++i)
+		{
+			console.log(A[i]);
+		}
+
+		//2
+		var result = 0;
+		for (var i = 0; i < A.length; ++i)
+		{
+			result += A[i];
+		}
+
+		// 1
+		var obj = { "green" : "зеленый", "red" : "красный", "blue" : "синий" };
+		for (var key in obj)
+		{
+			console.log("key - " + key + ", value - " + obj[key] + ";");
+		}
+
+		// 2
+		obj = { "Коля" : "200", "Вася" : "300", "Петя" : "400" };
+		for (var name in obj)
+		{
+			console.log(name + " - зарплата " + obj[name] + " долларов");
+		}
+
+		// Task 21 variant.
+		A = [2, 5, 9, 15, 0, 4];
+		for (var i = 0; i < A.length; ++i)
+		{
+			if (A[i] > 3 && A[i] < 10)
+			{
+				console.log(A[i]);
+			}
+		}
+		
+
+	</script>
+</body>
+</html>

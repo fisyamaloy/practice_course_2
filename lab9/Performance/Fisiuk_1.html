@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		// 1
+		var i = 1;
+		while (i <= 50)
+		{
+			console.log(i++);
+		}
+		
+		for (var i = 1; i <= 50; ++i)
+		{
+			console.log(i++);
+		}
+
+		// 2
+		var A = [1, 2, 3, 4, 5];
+		for (var i = 0; i <= A.length; ++i)
+		{
+			console.log(A[i]);
+		}
+
+		function multiplication(A) 
+		{
+			var result = 1;
+			for (var i = 0; i < A.length; ++i)
+			{
+				result *= A[i];
+			}
+
+			return result;
+		}
+
+		// 3
+		A = [2, 3, 4, 5];
+		console.log(multiplication(A));
+
+		var obj = {
+			"Минск"  : "Беларусь",
+			"Москва" : "Россия",
+			"Киев"	 : "Украина",
+		};
+
+		for (var key in obj)
+		{
+			console.log(key + " - это " + obj[key] + ".");
+		}
+
+	</script>
+</body>
+</html>
