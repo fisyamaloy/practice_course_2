@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		// % - 1
+		var a = 210;
+		var b = 26;
+		console.log(a % b);
+
+		// 2
+		console.log(a % b == 0 ? "Делится" : "Делится с остатком");
+
+		// Math - 1
+		var N = 21;
+		var st = Math.pow(N, 0);
+		console.log(st);
+
+		// 2
+		console.log(Math.sqrt(245));
+
+		// 3
+		function cubesSum(A) 
+		{
+			var cubesSum = 0;
+			for (var i = 0; i < arr.length; ++i) 
+			{
+				cubesSum += Math.pow(arr[i], 3);
+			}
+
+			return cubesSum;	
+		}
+
+		var arr = [4, 2, 5, 19, 13, 0, 10];
+		console.log(Math.sqrt(cubesSum(arr)));
+
+		// rounding - 1
+		var result = Math.sqrt(111 * 21);
+		console.log(result.toFixed());
+		console.log(result.toFixed(1));
+		console.log(result.toFixed(2));
+		
+		// 2
+		var value = Math.sqrt(111 * 1);
+		var obj = { "floor" : Math.floor(value), "ceil" : Math.ceil(value) };
+
+		// max and min
+		console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
+		console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
+
+		function getRandomInt(min, max) 
+		{
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+		// 1 - random
+		console.log(getRandomInt(1, 100 * 21));
+
+		// 2
+		arr = new Array(10);
+		for(var i = 0; i < arr.length; ++i)
+		{
+			arr[i] = getRandomInt(1, 100 * 21);
+		}
+
+		// 1 - abs
+
+		a = prompt();
+		b = prompt();
+		console.log(Math.abs(a - b));
+
+		var c = Math.abs(a - b);
+
+		// 1
+		arr = [12, 15, 20, 25, 59, 79];
+		var sum = 0;
+		for(var elem in arr)
+		{
+			sum += elem;
+		}
+		console.log(sum / arr.length);
+
+		// 2
+		function factorial(num)
+		{
+			return num > 1 ? num * factorial(num - 1) : 1;
+		}
+		console.log(factorial(5));
+
+	</script>
+</body>
+</html>
